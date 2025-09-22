@@ -44,24 +44,8 @@ Below are core plots stored in `results/plots/`.
 
 > Tip: You can generate additional evaluation plots (Predictions vs Actual, Residuals distribution, metric summaries) directly in the notebook using the provided evaluation cells.
 
-## Reproducing the Pipeline
-- Preprocessing:
-  - Fill categorical/binary NA with mode (e.g., `recycles_regularly`, `composts_organic_waste`, `smart_thermostat_installed`, `energy_efficient_appliances`).
-  - Encode `diet_type` and `heating_type` (map other/none to `unknown`).
-  - Clean `house_area_sqft` to numeric; impute with train mean.
-  - Validate numeric ranges; set negatives to NA and impute with train median.
-  - Scale selected continuous variables with `StandardScaler`.
-- Modeling:
-  - PyCaret regression `setup(..., target='carbon_footprint', session_id=42, normalize=True)`
-  - `best_model = compare_models()`
-  - `final_model = finalize_model(best_model)` and `predict_model` for inference.
-
-## Requirements
+## Tech Stack
 - pandas, numpy, scikit-learn, matplotlib, seaborn, pycaret
 
-## Notes
-- Metrics may vary slightly per run due to randomness (fixed `session_id=42` helps reproducibility).
-- Ensure plots exist in `results/plots/`. If not, run the evaluation cells in the notebook to regenerate.
-
-## License
-This project is provided as-is for educational and benchmarking purposes.
+## Acknowlegements
+This project was developed during HackerEarth Machine Learning challenge: World Water Day
