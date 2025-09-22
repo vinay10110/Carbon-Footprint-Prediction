@@ -19,17 +19,6 @@ Predict a household's carbon footprint from lifestyle and home attributes. This 
 - `CF.ipynb` — data prep, modeling, prediction
 - `requirements.txt` — project dependencies
 
-## Quickstart
-1. __Install dependencies__ (recommend a fresh virtual environment):
-   - Python 3.11+
-   - `pip install -r requirements.txt`
-2. __Open the notebook__: `CF.ipynb`
-3. __Run all cells__ to:
-   - Load and preprocess data (missing values, encoding, cleaning, scaling)
-   - Train and compare models with PyCaret (`compare_models()`)
-   - Finalize best model and predict on test set
-   - Save submission to `results/submission.csv`
-
 ## Key Results & Visualizations
 Below are core plots stored in `results/plots/`.
 
@@ -48,4 +37,4 @@ Below are core plots stored in `results/plots/`.
 - pandas, numpy, scikit-learn, matplotlib, seaborn, pycaret
 
 ## Acknowlegements
-This project was developed during HackerEarth Machine Learning challenge: World Water Day
+- This project was developed during HackerEarth Machine Learning challenge: World Water Day
