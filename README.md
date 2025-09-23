@@ -37,4 +37,4 @@ Below are core plots stored in `results/plots/`.
 - pandas, numpy, scikit-learn, matplotlib, seaborn, pycaret
 
 ## Acknowlegements
-- This project was developed during HackerEarth Machine Learning challenge: World Water Day
+- This project was developed during HackerEarth Machine Learning challenge: Earth Day
